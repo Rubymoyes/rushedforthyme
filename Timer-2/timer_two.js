@@ -14,11 +14,18 @@ function startTimer(duration, display) {
             timer = duration;
         }
     }, 1000);
+
+}
+
+function changeHeader() {
+    var changeElement = document.getElementById("id01");
+    changeElement.innerHTML = "This is a NEW HEADING.";
 }
 
 window.onload = function () {
     var twentyMinutes = 60 * 20,
-        display = document.querySelector('#time');
-    startTimer(twentyMinutes, display);
+        timeDisplay = document.querySelector('#time');
+    startTimer(twentyMinutes, timeDisplay);
+    changeHeader();
 };
 
