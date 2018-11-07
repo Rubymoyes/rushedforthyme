@@ -22,9 +22,13 @@ function changeHeader() {
   changeElement.innerHTML = "This is a NEW HEADING.";
 }
 
+
+// ONLOAD FUNCTION - CALLS ALL FUNCTIONS
+
 window.onload = function () {
   var twentyMinutes = 60 * 20,
       timeDisplay = document.querySelector('#time');
   startTimer(twentyMinutes, timeDisplay);
   changeHeader();
+  changeInstructions();
 };
