@@ -1,4 +1,4 @@
-function createTimer(duration, display) {
+function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
 
     setInterval(function () {
@@ -21,3 +21,4 @@ window.onload = function () {
         display = document.querySelector('#time');
     startTimer(twentyMinutes, display);
 };
+

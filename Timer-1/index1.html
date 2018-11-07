@@ -8,13 +8,23 @@
 <body>
 
     <title>
-        Rushed for Thyme - Timer 1
+        Rushed for Thyme - Stopwatch Timer 1
     </title>
 
     <h1>Rushed-for-Thyme: A Cooking Helper
     </h1>
 
-    <div id="timerAndCountdown">
+    <div class="main">
+        <div class="timer"> 
+            <span id="lblhr">00</span>
+              : <span id="lblmin">00</span>
+              : <span id="lblsec">00</span>
+          
+        </div>
+
+        <button class="btn" onclick="startTimer()">Start</button>
+        <button class="btn" onclick="endTimer()">Stop</button>
+        <button class="btn" onclick="resetTimer()">Reset</button>
 
     </div>
 
