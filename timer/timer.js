@@ -17,6 +17,8 @@ function startTimer(duration, display) {
 
 }
 
+// BASIC TEST TO SEE CHANGES
+
 function changeHeader() {
   var changeElement = document.getElementById("id01");
   changeElement.innerHTML = "This is a NEW HEADING.";
