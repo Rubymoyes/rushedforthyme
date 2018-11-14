@@ -5,18 +5,9 @@
   "repository": "https://github.com/Rubymoyes/rushedforthyme.git",
   "license": "MIT",
   "scripts": {
-    "start": "webpack && node server",
-    "dev": "node server & webpack --watch",
+    "start": "node server",
+    "dev": "node server --watch",
     "test": "jest --watchAll"
-  },
-  "babel": {
-    "presets": [
-      "env",
-      "react"
-    ],
-    "plugins": [
-      "transform-class-properties"
-    ]
   },
   "jest": {
     "setupFiles": [
@@ -27,14 +18,9 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.1.4"
   },
-  "author": "Karry <hello@devacademy.co.nz>"
+  "author": "Ruby E Moyes <moyesruby@gmail.com>"
 }
