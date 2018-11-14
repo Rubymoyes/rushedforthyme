@@ -4,7 +4,7 @@ let data = {
   "instructions": {
       "19:58" : "Instruction 1",
       "19:55" : "Instruction 2",
-      "19:50" : "Heyyyy number 3"
+      "19:50" : "Instruction number 3!"
   }
 }
 
@@ -36,10 +36,10 @@ function startTimer(duration, display) {
 
 // BASIC TEST TO SEE CHANGES
 
-function changeHeader() {
-  let changeElement = document.getElementById("id01");
-  changeElement.innerHTML = "This is a NEW HEADING.";
-}
+// function changeHeader() {
+//   let changeElement = document.getElementById("id01");
+//   changeElement.innerHTML = "This is a NEW HEADING.";
+// }
 
 // Function to show object value when key is the correct time
 
@@ -52,26 +52,19 @@ function changeInstructions (message) {
 // If else statement - which displays the last instruction until the next instruction
 
 function checkTime (time) {
-
   if (data.instructions[time] == undefined) {
-    
   } 
   else {
     changeInstructions(data.instructions[time])
   }
-
-    
     console.log(data.instructions[time])
-  
 }
 
 
-// ONLOAD FUNCTION - CALLS ALL FUNCTIONS
+// ONLOAD FUNCTION - Calls Timer Functions
 
 window.onload = function () {
   let twentyMinutes = 60 * 20,
       timeDisplay = document.querySelector('#time');
   startTimer(twentyMinutes, timeDisplay);
-  changeHeader();
-  // changeInstructions();
 };
