@@ -1,5 +1,7 @@
 {
     "instructions": {
-        ""
+        "19:50" : "Instruction 1",
+        "19:40" : "Instruction 2",
+        "18:00" : "Heyyyy"
     }
 }

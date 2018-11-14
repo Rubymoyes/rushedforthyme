@@ -1,5 +1,17 @@
+// TEMPORARY DATA STORAGE - TEST DATA
+
+let data = {
+  "instructions": {
+      "19:58" : "Instruction 1",
+      "19:55" : "Instruction 2",
+      "19:50" : "Heyyyy number 3"
+  }
+}
+
+// TIMER FUNCTION
+
 function startTimer(duration, display) {
-  var timer = duration, minutes, seconds;
+  let timer = duration, minutes, seconds;
 
   setInterval(function () {
       minutes = parseInt(timer / 60, 10)
@@ -10,27 +22,56 @@ function startTimer(duration, display) {
 
       display.textContent = minutes + ":" + seconds;
 
+      console.log(minutes + ':' +  seconds)
+      checkTime(minutes + ':' +  seconds)
+
+
       if (--timer < 0) {
           timer = duration;
       }
   }, 1000);
+
 
 }
 
 // BASIC TEST TO SEE CHANGES
 
 function changeHeader() {
-  var changeElement = document.getElementById("id01");
+  let changeElement = document.getElementById("id01");
   changeElement.innerHTML = "This is a NEW HEADING.";
+}
+
+// Function to show object value when key is the correct time
+
+function changeInstructions (message) {
+  let changeElement = document.getElementById("changingInstructions")
+  changeElement.innerHTML = message
+}
+
+// Function to check the time for instructions and change instructions based on time
+// If else statement - which displays the last instruction until the next instruction
+
+function checkTime (time) {
+
+  if (data.instructions[time] == undefined) {
+    
+  } 
+  else {
+    changeInstructions(data.instructions[time])
+  }
+
+    
+    console.log(data.instructions[time])
+  
 }
 
 
 // ONLOAD FUNCTION - CALLS ALL FUNCTIONS
 
 window.onload = function () {
-  var twentyMinutes = 60 * 20,
+  let twentyMinutes = 60 * 20,
       timeDisplay = document.querySelector('#time');
   startTimer(twentyMinutes, timeDisplay);
   changeHeader();
-  changeInstructions();
+  // changeInstructions();
 };
