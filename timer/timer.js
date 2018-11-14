@@ -61,6 +61,14 @@ function checkTime (time) {
 }
 
 
+// Make a function to call out in the console log when there is a
+// new displayed instruction, w/ time and value.
+
+function consoleCall () {
+  
+}
+
+
 // ONLOAD FUNCTION - Calls Timer Functions
 
 window.onload = function () {
