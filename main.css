@@ -1,4 +1,77 @@
-CENTRED
-DIFFERENT FONT
-PICTURE BACKGROUND OF SOME RICE
-MAYBE 2 COLUMNS? Info on one side, Timer in big text on the other...
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.maincontainer {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.maincontainer2 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    
+}
+.ingredients, .equipment-condiments, .nutrition {
+    width: 33.33%;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+/* .ingredients {
+}
+
+.equipment-condiments {
+}
+
+.nutrition {
+} */
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.timerCountdown {
+    padding: 30px;
+    background-color: blue;
+    width: 30%;
+}
+
+.instructions {
+    padding: 30px;
+    background-color: red;
+}
+
+p {
+    width: 750px;
+}
+
+header {
+    font-family: 'Sacramento', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+header > h1 {
+    font-size: 100px;
+    padding: 0;
+    display: inline-block;
+    line-height: 1;
+
+}
